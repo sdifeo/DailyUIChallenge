@@ -1,0 +1,260 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Checkout</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- https://dribbble.com/shots/7106300-Daily-UI-Challenge-Credit-Card-Checkout/attachments/108805?mode=media -->
+
+    <div class="container">
+        <div class="left__container">
+            <div class="shipping__container">
+                <div class="circle">
+                    <div class="checkmark"></div>
+                </div>
+                <span id="shipping_title">Shipping</span>
+            </div>
+
+            <div id="vertical_line"></div>
+
+            <div class="shipping__container">
+                <div class="circle">
+                    <div class="checkmark"></div>
+                </div>
+                <span id="shipping_title">Personal Detail</span>
+            </div>
+
+            <div id="vertical_line"></div>
+
+            <div class="shipping__container">
+                <div class="circle">
+                    <div class="checkmark"></div>
+                </div>
+                <span id="shipping_title">Payment</span>
+            </div>
+
+            <div id="vertical_line"></div>
+
+            <div class="shipping__container">
+                <div class="circle">
+                    <div class="checkmark"></div>
+                </div>
+                <span id="shipping_title">Review</span>
+            </div>
+        </div>
+
+        <div class="middle__container">
+            <div class="middle__contents">
+                <div id="payment_title">
+                    <span>Payment</span>
+                </div>
+
+                <div id="card_type">
+                    <span>Card Type</span>
+                </div>
+                <div class="cardtype__container">
+
+                    <div class="credit_container cardtype_choice">
+                        <input type="radio">
+                        <span>Credit Card</span>
+                    </div>
+
+                    <div class="paypal_container cardtype_choice">
+                        <input type="radio">
+                        <span>Paypal</span>
+                    </div>
+                </div>
+
+                <div class="inputsection__container">
+                    <div id="creditcard_input">
+                        <label>Card Number</label>
+                        <input type="text" placeholder="0000 - 0000 - 0000 - 0000">
+                    </div>
+
+                    <div id="">
+                        <input type="text" placeholder="Card Holder Name">
+                    </div>
+
+                    <div class="inputsection2__container">
+                        <input type="text" placeholder="Expiry Date">
+                        <input type="text" placeholder="CVV Code">
+                    </div>
+
+                    <div class="savecard__container">
+                        <input type="checkbox" name="save" id="checkbox_save">
+                        <label for="save">Save my card</label>
+                    </div>
+                </div>
+
+                <div class="confirmation__container">
+                    <div>
+                        <span id="btn_back">
+                            <- BACK</span>
+                    </div>
+
+                    <div>
+                        <button id="btn_purchase">PURCHASE $500</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="right__container">
+            <div>
+                <span id="order">Order</span>
+            </div>
+
+            <hr>
+
+            <div class="purchase__container">
+                <div class="single_purchase">
+                    <div id="purchase_image"></div>
+
+                    <div class="purchase_information">
+                        <div class="purchase_title">
+                            <span id="item_title">The Fault in Our Stars</span>
+                        </div>
+
+                        <div class="purchase_author">
+                            <span>by John Green</span>
+                        </div>
+
+                        <div class="btn_remove">
+                            <span>REMOVE</span>
+                        </div>
+                    </div>
+
+                    <div class="purchaseQuantity__container">
+                        <div class="purchase_quantity">
+                            <input type="text" value="3">
+                        </div>
+
+                        <div class="purchase_price">
+                            <span>$30</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="horizontal_line"></div>
+
+            <div class="purchase__container">
+
+                <div class="single_purchase">
+                    <div id="purchase_image"></div>
+
+                    <div class="purchase_information">
+                        <div class="purchase_title">
+                            <span id="item_title">The Hunger Games</span>
+                        </div>
+
+                        <div class="purchase_author">
+                            <span>by Suzanne Collins</span>
+                        </div>
+
+                        <div class="btn_remove">
+                            <span>REMOVE</span>
+                        </div>
+                    </div>
+
+
+                    <div class="purchaseQuantity__container">
+                        <div class="purchase_quantity">
+                            <input type="text" value="2">
+                        </div>
+
+                        <div class="purchase_price">
+                            <span>$30</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="horizontal_line"></div>
+
+            <div class="purchase__container">
+                <div class="single_purchase">
+                    <div id="purchase_image"></div>
+
+                    <div class="purchase_information">
+                        <div class="purchase_title">
+                            <span id="item_title">The Book of Thief</span>
+                        </div>
+
+                        <div class="purchase_author">
+                            <span>by Marcus Zusak</span>
+                        </div>
+
+                        <div class="btn_remove">
+                            <span>REMOVE</span>
+                        </div>
+                    </div>
+
+                    <div class="purchaseQuantity__container">
+                        <div class="purchase_quantity">
+                            <input type="text" value="1">
+                        </div>
+
+                        <div class="purchase_price">
+                            <span>$30</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="horizontal_line"></div>
+
+            <div class="purchase_discount_price__container">
+                <span id="discount_code">Have a discount code?</span>
+
+                <div class="purchase_subtotal">
+                    <div>
+                        <span>Subtotal</span>
+                    </div>
+                    <div>
+                        <span>$ 500</span>
+                    </div>
+                </div>
+
+                <div class="purchase_shipping">
+                    <div>
+                        <span>Shipping</span>
+                    </div>
+                    <div>
+                        <span>$ 0</span>
+                    </div>
+                </div>
+
+                <div class="purchase_total">
+                    <div>
+                        <span>Total</span>
+                    </div>
+                    <div>
+                        <span>$ 500</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
